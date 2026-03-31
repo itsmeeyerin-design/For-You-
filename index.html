@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>너와 함께한 365일</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 잠금 화면 -->
+  <div id="lock-screen" class="lock-screen">
+    <div class="lock-card">
+      <p class="lock-label">To. 너에게</p>
+      <h1>이 페이지는 너만 열 수 있어</h1>
+      <p class="lock-question">내가 부르는 너의 애칭은?</p>
+      <div class="lock-input-wrap">
+        <input type="password" id="password-input" placeholder="정답을 입력해줘" />
+        <button id="unlock-btn">열기</button>
+      </div>
+      <p id="lock-message" class="lock-message"></p>
+    </div>
+  </div>
+
+  <!-- 메인 콘텐츠 -->
+  <main id="main-content" class="hidden">
+    <!-- 인트로 -->
+    <section class="hero section">
+      <div class="hero-inner">
+        <p class="hero-sub">우리의 1년</p>
+        <h1>너와 함께한 365일</h1>
+        <p class="hero-desc">
+          평범한 하루들이 너 덕분에 특별해졌어!<br />
+          사진 몇 개를 가져와 봤지롱~
+        </p>
+        <button class="primary-btn" id="start-btn">우리의 이야기 시작하기</button>
+      </div>
+    </section>
+
+    <!-- D+ -->
+    <section id="days-section" class="section fade-in">
+      <div class="container center-card">
+        <p class="section-label">우리가 함께한 시간</p>
+        <h2 id="d-day">D+000</h2>
+        <p class="date-range">2025.03.31 ~ 오늘</p>
+        <p class="section-text">
+          짧다면 짧고, 길다면 긴 시간.<br />
+          참 많이 웃고, 울고, 먹고 ㅎㅎ
+        </p>
+      </div>
+    </section>
+
+    <!-- 타임라인 -->
+    <section class="section timeline-section">
+      <div class="container">
+        <h2 class="section-title fade-in">우리의 시간들</h2>
+
+        <!-- 1. 사귀게 되기까지 -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-text">
+            <p class="timeline-label">01</p>
+            <h3>사귀게 되기까지</h3>
+            <p>
+              아무 사이도 아니었는데...<br />
+              어쩌다 보니 사귄지 1년이 되어버린 사건😎
+            </p>
+          </div>
+          <div class="timeline-gallery single">
+            <img src="images/story1.jpg" alt="사귀게 되기까지" />
+          </div>
+        </div>
+
+        <!-- 2. 첫 데이트 -->
+        <div class="timeline-item reverse fade-in">
+          <div class="timeline-text">
+            <p class="timeline-label">02</p>
+            <h3>첫 데이트</h3>
+            <p>
+              초큼 어색했지만 설렜던,<br />
+              우리의 첫 공식? 행궁동 데이트
+            </p>
+          </div>
+          <div class="timeline-gallery grid-2">
+            <img src="images/date1.jpg" alt="첫 데이트 1" />
+            <img src="images/date2.jpg" alt="첫 데이트 2" />
+            <img src="images/date3.jpg" alt="첫 데이트 3" />
+            <img src="images/date4.jpg" alt="첫 데이트 4" />
+          </div>
+        </div>
+
+        <!-- 3. 강릉 여행 -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-text">
+            <p class="timeline-label">03</p>
+            <h3>강릉 여행</h3>
+            <p>
+              같이 바다를 보고, 맛있는 것을 먹고,<br />
+              아주 꿈만 같았던 여행이었지.
+            </p>
+          </div>
+          <div class="timeline-gallery grid-3">
+            <img src="images/gangneung1.jpg" alt="강릉 여행 1" />
+            <img src="images/gangneung2.jpg" alt="강릉 여행 2" />
+            <img src="images/gangneung3.jpg" alt="강릉 여행 3" />
+          </div>
+        </div>
+
+        <!-- 4. 지금의 우리 -->
+        <div class="timeline-item reverse fade-in">
+          <div class="timeline-text">
+            <p class="timeline-label">04</p>
+            <h3>지금의 우리</h3>
+            <p>
+              처음보다 더 편해졌고,<br />
+              편해진 만큼 더 소중해진 우리.
+            </p>
+          </div>
+          <div class="timeline-gallery grid-2-two">
+            <img src="images/now1.jpg" alt="지금의 우리 1" />
+            <img src="images/now2.jpg" alt="지금의 우리 2" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 좋아하는 이유 -->
+    <section class="section reasons-section">
+      <div class="container">
+        <h2 class="section-title fade-in">내가 너를 좋아하는 이유</h2>
+        <div class="reasons-grid">
+          <div class="reason-card fade-in">
+            <span>01</span>
+            <p>귀여워서</p>
+          </div>
+          <div class="reason-card fade-in">
+            <span>02</span>
+            <p>사소한 순간도 특별하게 만들어줘서</p>
+          </div>
+          <div class="reason-card fade-in">
+            <span>03</span>
+            <p>그냥 너라서</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 비밀편지 오픈 -->
+    <section class="section letter-trigger-section">
+      <div class="container center-card fade-in">
+        <p class="section-label">마지막으로</p>
+        <h2 class="section-title">너에게 전하고 싶은 말</h2>
+        <p class="section-text">
+          내 코딩 실력 어떤데ㅎㅎ<br />
+          마지막으로 하고 싶은 말은~
+        </p>
+        <button id="open-letter-btn" class="primary-btn">편지 열어보기</button>
+      </div>
+    </section>
+
+    <!-- 비밀편지 -->
+    <section id="letter-section" class="section letter-section hidden">
+      <div class="container">
+        <div class="letter-card">
+          <p class="letter-to">To. 바다</p>
+          <h2>너와 함께한 365일</h2>
+          <div class="letter-content">
+            <p>벌써 우리가 만나기로 한지 1년이 지났어!</p>
+            <p>
+              참 많은 일이 있었는데 말이야<br />
+              확실한건 너랑 함께라서 행복했어
+            </p>
+            <p>
+              웃고, 울고, 포켓몬 카드 깡하구<br />
+              아주 따뜻했던 1년이었달까?
+            </p>
+            <p>
+              늘 고맙고 미안하고 사랑해~<br />
+              -사자가-
+            </p>
+          </div>
+          <p class="letter-end">앞으로도 잘 부탁해0//0</p>
+        </div>
+      </div>
+      <div id="sparkles" class="sparkles"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
